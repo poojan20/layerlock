@@ -1,56 +1,60 @@
-LayerLock 🔐
-A secure text encryption and decryption app built with Streamlit. It allows you to encrypt any text, download it as a PDF, and decrypt it using a unique key.
+# LayerLock 🔐
 
-🔧 Features
-Text Encryption: Encrypts any text using SHA-256 hashing.
+LayerLock is a secure text encryption and decryption tool built with Python and Streamlit. It allows you to encrypt any text, export the encrypted version as a PDF along with a unique 10-character key, and later decrypt the file using that key.
 
-PDF Generation: Saves the encrypted content into a downloadable PDF.
+---
 
-Key-Based Decryption: Decrypt using the PDF + 10-character key.
+## 🚀 Features
 
-Streamlit UI: Interactive, responsive interface with easy navigation.
+- 🔒 Text encryption using SHA-256
+- 📄 Encrypted text PDF generation
+- 🔑 Unique 10-character key generation
+- 📥 Decryption using PDF + key
+- 🖥️ Simple, responsive Streamlit UI
+- 📋 Copy-to-clipboard support for key
 
-Clipboard Support: One-click copy for the decryption key.
+---
 
-📦 Requirements
-Python 3.8+
+## 🛠️ Requirements
 
-streamlit
+Install required packages:
 
-fpdf
-
-hashlib
-
-base64
-
-io
-
-Install dependencies using:
-
-bash
-Copy
-Edit
+```bash
 pip install streamlit fpdf
-🚀 How to Run
-bash
-Copy
-Edit
+```
+
+---
+
+## 💻 How to Run
+
+```bash
 streamlit run app.py
-🛡️ Limitations
-SHA-256 is a one-way hash and cannot be decrypted. The app simulates encryption/decryption by storing the original message temporarily, which may not be suitable for high-security use.
+```
 
-📁 Folder Structure
-Copy
-Edit
+---
+
+## 📁 File Structure
+
+```
 layerlock/
-├── app.py
-├── encrypted_text.pdf
-├── README.md
-└── ...
-📌 Notes
-Ideal for educational purposes and lightweight secure storage.
+├── app.py          # Main Streamlit app
+├── README.md       # Project documentation
+```
 
-Extendable to support more robust encryption (AES, RSA).
+---
 
-📄 License
-MIT License – use freely with attribution.
+## ⚠️ Important Note
+
+LayerLock uses SHA-256 hashing for encryption. Since SHA-256 is a one-way function, the app mimics decryption by comparing stored hashes. This is not suited for real-world sensitive data encryption but is excellent for learning and demonstration purposes.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🤝 Contributions
+
+Contributions, issues, and feature requests are welcome. Feel free to fork the repo and submit pull requests.
