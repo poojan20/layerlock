@@ -6,12 +6,12 @@ LayerLock is a secure text encryption and decryption tool built with Python and 
 
 ## 🚀 Features
 
-- 🔒 Text encryption using SHA-256
-- 📄 Encrypted text PDF generation
-- 🔑 Unique 10-character key generation
-- 📥 Decryption using PDF + key
-- 🖥️ Simple, responsive Streamlit UI
-- 📋 Copy-to-clipboard support for key
+-  Text encryption using SHA-256
+-  Encrypted text PDF generation
+-  Unique 10-character key generation
+-  Decryption using PDF + key
+-  Simple, responsive Streamlit UI
+-  Copy-to-clipboard support for key
 
 ---
 
